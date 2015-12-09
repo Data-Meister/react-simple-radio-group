@@ -104,7 +104,7 @@ module.exports = React.createClass({
     handleChange: function (event) {
         var isRadio = event.target.type == 'radio';
         var fn = this.props.onChange || emptyFn;
-        var value = this.value = target.value;
+        var value = this.value = event.target.value;
 
         if(!isRadio){
             return;
