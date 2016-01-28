@@ -110,7 +110,7 @@ module.exports = React.createClass({
             return;
         }
 
-        if(!event.target.getAttribute('name') == this.props.name){
+        if(event.target.getAttribute('name') != this.props.name){
             return;
         }
 
