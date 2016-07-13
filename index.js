@@ -50,7 +50,7 @@ module.exports = React.createClass({
 
     setRadioNames: function () {
         this.forEachRadio(function (radio) {
-            radio.setAttribute('name', this.props.name)
+            if ( ! radio.getAttribute("name") ) radio.setAttribute('name', this.props.name);
         })
     },
 
@@ -107,6 +107,10 @@ module.exports = React.createClass({
         var value = this.value = event.target.value;
 
         if(!isRadio){
+            return;
+        }
+
+        if(event.target.getAttribute('name') != this.props.name){
             return;
         }
 
