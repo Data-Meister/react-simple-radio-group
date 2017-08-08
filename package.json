@@ -1,6 +1,6 @@
 {
   "name": "react-simple-radio-group",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A React mixin for linking form fields to a deep structure of data within the component's state.",
   "main": "index.js",
   "scripts": {
@@ -26,9 +26,15 @@
   },
   "homepage": "https://github.com/zodiac-xl/react-simple-radio-group",
   "dependencies": {
-    "object-assign": "^4.0.1",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "object-assign": "^4.0.1"
+  },
+  "devDependencies": {
+    "react": "^15.6",
+    "react-dom": "^15.6"
+  },
+  "peerDependencies": {
+    "react": "^0.14 || ^15.0.0-rc || ^15.0",
+    "react-dom": "^0.14 || ^15.0.0-rc || ^15.0"
   },
   "_npmUser": {
     "name": "wuxiaolong",
